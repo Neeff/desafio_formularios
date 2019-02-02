@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col col-md-4">
+    <%= form_with(model: @sale, local: true)  do |form| %>
+        <%= form.label :category %>
+        <%= form.text_field :category,class: "form-control"%><br>
+        <%= form.label :detail%>
+        <%= form.text_area :detail, class: "form-control"%><br>
+        <%= form.label :value %>
+        <%= form.number_field :value, class: "form-control"%><br>
+        <%= form.label :discount %>
+        <%= form.number_field :discount, class: "form-control"%><br>
+        <%= form.label :tax %>
+        <%= form.check_box :tax, class: "form-control"%><br>
+        <%= form.submit 'Enviar', class: 'btn btn-success' %>
+    <% end %>
+
+  </div>
+</div>
